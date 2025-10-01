@@ -9,7 +9,7 @@
 
 **A full-stack product management application to manage products with CRUD operations, role-based access, and a modern UI.**
 
-🌐 **[Live Demo](https://your-frontend-link.vercel.app)**
+🌐 **[Live Demo](https://catalogo-git-main-rakesh-mahapatros-projects.vercel.app)**
 
 </div>
 
@@ -180,4 +180,5 @@ npm run dev
 </div>
 
 ---
+
 
