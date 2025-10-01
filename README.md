@@ -98,8 +98,29 @@ A full-stack product catalog application that streamlines the process of managin
 
 ![Create Product](https://res.cloudinary.com/dqz5xgr5v/image/upload/v1759339750/Screenshot_2025-10-01_at_22.53.09_edruqa.png)
 
+
 ---
 
+## 🔑 Role-Based Access Demo
+
+You can use the following accounts to test role-based access in the application:
+
+| Role  | Email                                     | Password | Access                                                                              |
+| ----- | ----------------------------------------- | -------- | ----------------------------------------------------------------------------------- |
+| Admin | [admin@gmail.com](mailto:admin@gmail.com) | 123456   | Full access: create, update, delete any product                                     |
+| User  | [neha@gmail.com](mailto:neha@gmail.com)   | 123456   | Limited access: can view all products; can update/delete only products they created |
+| User  | [test@gmail.com](mailto:test@gmail.com)   | 1234566  | Limited access: can view all products; can update/delete only products they created |
+
+**Instructions:**
+
+1. Go to the [live demo](https://catalogo-seven-kappa.vercel.app).
+2. Log in with **Admin** credentials → full CRUD capabilities are enabled.
+3. Log in with **User** credentials (**[neha@gmail.com](mailto:neha@gmail.com)** or **[test@gmail.com](mailto:test@gmail.com)**) → CRUD operations are restricted; unauthorized actions return **403 Access Denied**.
+4. Try creating, editing, or deleting products with each account to see role-based permissions in action.
+
+> 🔹 This demonstrates how **role-based access control (RBAC)** works in the system without needing a video.
+
+---
 ## 🔗 API Endpoints
 
 ### **Authentication**
@@ -198,5 +219,6 @@ npm run dev
 ---
 
 Built with ❤️ using React, Node.js, and MongoDB
+
 
 
