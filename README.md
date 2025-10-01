@@ -9,7 +9,7 @@
 
 **A full-stack product management application to manage products with CRUD operations, role-based access, and a modern UI.**
 
-🌐 **[Live Demo](https://catalogo-seven-kappa.vercel.app)**
+🌐 **[Live Demo](https://your-frontend-link.vercel.app)**
 
 </div>
 
@@ -60,19 +60,27 @@
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots / Demo
 
-### Dashboard
+### Landing Page
 
-![Dashboard](https://via.placeholder.com/800x400?text=Dashboard+Screenshot)
+![Landing Page](https://res.cloudinary.com/dqz5xgr5v/image/upload/v1759339749/Screenshot_2025-10-01_at_22.50.27_jqdjhb.png)
 
-### Product List
+### Home Page
 
-![Product List](https://via.placeholder.com/800x400?text=Product+List+Screenshot)
+![Home Page](https://res.cloudinary.com/dqz5xgr5v/image/upload/v1759339751/Screenshot_2025-10-01_at_22.52.36_bujf9m.png)
 
-### Create Product
+### Product Details Page
 
-![Create Product](https://via.placeholder.com/800x400?text=Create+Product+Screenshot)
+![Product Details](https://res.cloudinary.com/dqz5xgr5v/image/upload/v1759339750/Screenshot_2025-10-01_at_22.52.45_pf366j.png)
+
+### Edit Product Page
+
+![Edit Product](https://res.cloudinary.com/dqz5xgr5v/image/upload/v1759339750/Screenshot_2025-10-01_at_22.52.54_ga4d9c.png)
+
+### Create Product Page
+
+![Create Product](https://res.cloudinary.com/dqz5xgr5v/image/upload/v1759339750/Screenshot_2025-10-01_at_22.53.09_edruqa.png)
 
 ---
 
@@ -145,7 +153,7 @@ Create `.env` file:
 VITE_BACKEND_URL=http://localhost:5000/api/v1
 ```
 
-Start frontend:
+Run frontend:
 
 ```bash
 npm run dev
@@ -168,7 +176,7 @@ npm run dev
 * Building full-stack applications with **React + Node.js + MongoDB**
 * JWT authentication & role-based access control
 * Redux Toolkit for state management
-* Secure API design with validation and error handling
+* Modern UI with **shadcn/ui + Tailwind CSS**
 * Deploying backend on Render & frontend on Vercel
 
 ---
@@ -178,8 +186,5 @@ npm run dev
 **Built with ❤️ using React, Node.js, and MongoDB**
 
 </div>
-
----
-
 
 
