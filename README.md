@@ -1,51 +1,47 @@
-# Catalogo – Product Management System
+# Catalogo: Product Catalog & Management System
 
-> ⚠️ **Note:** The backend is hosted on a free-tier service.
-> The first request after inactivity may take **30–60 seconds** to wake up the server. Subsequent requests will perform normally. 🚀
+> ⚠️ **Note:** The backend is hosted on a free-tier service. The first request after inactivity may take **30–60 seconds** to wake up the server. Subsequent requests will perform normally. 🚀
 
-<div align="center">
+![Catalogo Banner](https://img.shields.io/badge/Catalogo-Product%20Catalog-blue?style=for-the-badge\&logo=github)
 
-![Catalogo Banner](https://img.shields.io/badge/Catalogo-Product%20Management-blue?style=for-the-badge\&logo=github)
-
-**A full-stack product management application to manage products with CRUD operations, role-based access, and a modern UI.**
+A full-stack product catalog application that streamlines the process of managing products with features like CRUD operations, role-based access control, and secure authentication.
 
 🌐 **[Live Demo](https://catalogo-seven-kappa.vercel.app)**
-
-</div>
 
 ---
 
 ## ✨ Features
 
-### ✅ Authentication
+### ✅ Authentication & Authorization
 
-* Secure user registration and login
-* JWT-based authentication
-* Password hashing with **bcrypt**
-* Role-based access: **User vs Admin**
-* Protected API routes
+* Secure user signup and login
+* JWT-based authentication with **httpOnly cookies**
+* Password hashing using **bcrypt**
+* Role-based access control (RBAC) to manage user permissions
 
 ### ✅ Product Management
 
-* **Create** products with name, description, price, stock, and image URL
-* **Read** products (all or by ID)
-* **Update** product details (admin or owner)
-* **Delete** products (admin or owner only)
-* Role-based access for secure operations
+* **Create** new products with detailed information
+* **Read** and view products with pagination
+* **Update** product details efficiently
+* **Delete** products with confirmation prompts
+
+### ✅ Role-Based Access Control (RBAC)
+
+* **Admin**: Full access to all product management features
+* **User**: View products; cannot create, update, or delete
+* **Custom Roles**: Define additional roles as needed
 
 ### ✅ Modern UI/UX
 
-* Responsive UI built with **React + Vite**
+* Responsive and accessible UI using **React + Vite**
 * **Redux Toolkit** for global state management
-* **shadcn/ui** for reusable components
-* **Tailwind CSS** for styling
+* **Tailwind CSS** for consistent styling
 * Real-time UI updates after CRUD operations
 
 ---
 
 ## 🛠️ Tech Stack
-
-<div align="center">
 
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge\&logo=react\&logoColor=black)
 ![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge\&logo=redux\&logoColor=white)
@@ -56,11 +52,31 @@
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge\&logo=vercel\&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge\&logo=vite\&logoColor=white)
 
-</div>
+### **Frontend**
+
+* React (with Vite) for fast and optimized development
+* Redux Toolkit for predictable state management
+* React Router for navigation
+* Tailwind CSS for styling
+
+### **Backend**
+
+* Node.js with Express for REST APIs
+* MongoDB with Mongoose for data modeling
+* JWT for authentication (httpOnly cookies)
+* bcrypt for secure password hashing
+* Joi for request validation
+* CORS for cross-origin security
+
+### **Deployment**
+
+* Frontend: **Vercel**
+* Backend: **Render**
+* Database: **MongoDB Atlas**
 
 ---
 
-## 📸 Screenshots / Demo
+## 📸 Screenshots
 
 ### Landing Page
 
@@ -90,15 +106,15 @@
 
 * `POST /api/v1/user/signup` → Register new user
 * `POST /api/v1/user/login` → Login user
-* `GET /api/v1/user/getUser` → Get logged-in user info (protected)
+* `GET /api/v1/user/getUser` → Get logged-in user details
 
 ### **Products**
 
-* `GET /api/v1/products` → Get all products
-* `GET /api/v1/products/:id` → Get product by ID
-* `POST /api/v1/products` → Create new product (admin or owner)
-* `PUT /api/v1/products/:id` → Update product (admin or owner)
-* `DELETE /api/v1/products/:id` → Delete product (admin or owner)
+* `GET /api/v1/products` → Get products (with pagination)
+* `GET /api/v1/products/:id` → Get single product
+* `POST /api/v1/products` → Create new product
+* `PATCH /api/v1/products/:id` → Update product
+* `DELETE /api/v1/products/:id` → Delete product
 
 ---
 
@@ -114,8 +130,8 @@
 
 ```bash
 # Clone repo
-git clone https://github.com/your-username/catalogo.git
-cd catalogo
+git clone https://github.com/yourusername/Catalogo.git
+cd Catalogo
 ```
 
 #### **Backend**
@@ -128,13 +144,13 @@ npm install
 Create `.env` file:
 
 ```env
-PORT=5000
-MONGO_URI=your_database_uri
+PORT=8000
+MONGO_URI=your_mongodb_uri
 FRONTEND_URL=http://localhost:5173
 JWT_SECRET=your_jwt_secret
 ```
 
-Start backend:
+Start server:
 
 ```bash
 npm run dev
@@ -150,7 +166,7 @@ npm install
 Create `.env` file:
 
 ```env
-VITE_BACKEND_URL=http://localhost:5000/api/v1
+VITE_BACKEND_URL=http://localhost:8000/api/v1
 ```
 
 Run frontend:
@@ -163,29 +179,24 @@ npm run dev
 
 ## 🔒 Security Highlights
 
-* JWT tokens securely handled
+* JWT tokens stored in **httpOnly cookies** (prevents XSS attacks)
 * Passwords hashed with **bcrypt**
-* Role-based route protection
-* Input validation
-* CORS configured
+* Validations with **Joi**
+* Protected API routes
+* CORS configured for secure cross-origin requests
 
 ---
 
 ## ✅ Key Learnings
 
-* Building full-stack applications with **React + Node.js + MongoDB**
-* JWT authentication & role-based access control
-* Redux Toolkit for state management
-* Modern UI with **shadcn/ui + Tailwind CSS**
-* Deploying backend on Render & frontend on Vercel
+* Core **CRM concepts**: product lifecycle, filtering, pagination
+* Secure authentication using **JWT & cookies**
+* State management using **Redux Toolkit**
+* Handling **CORS and deployment** on Vercel & Render
+* Implementing **server-side filtering and pagination**
 
 ---
 
-<div align="center">
-
-**Built with ❤️ using React, Node.js, and MongoDB**
-
-</div>
-
+Built with ❤️ using React, Node.js, and MongoDB
 
 
