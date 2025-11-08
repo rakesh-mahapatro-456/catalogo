@@ -1,0 +1,30 @@
+POST http://localhost:8080/api/v1/user/signup
+Content-Type: application/json
+
+{
+    "name": "neha",
+    "email": "neha@gmail.com",
+    "password": "123456",
+    "username": "neha"
+}
+
+###
+POST http://localhost:8080/api/v1/user/login
+Content-Type: application/json
+
+{
+    "email": "neha@gmail.com",
+    "password": "123456"
+}
+
+
+###
+GET http://localhost:8080/api/v1/user/getUser
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGNlMmY5MTkwZWEzZTQxOWI4NmVhMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzYyNTQxNTc5LCJleHAiOjE3NjMxNDYzNzl9.5lhGbf7gkg-HWbY768ULHGJ9OpM_UzO-xOs-OO21ydc
+
+
+
+
+###
+GET http://localhost:8080/api/v1/products/getProducts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGNlMmY5MTkwZWEzZTQxOWI4NmVhMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU5MzEwODY1LCJleHAiOjE3NTk5MTU2NjV9.EVS-vAJO6NBVm60A4CfQ2xXOYDFMI5fZ84qQaTxlimc
