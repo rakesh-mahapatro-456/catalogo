@@ -7,6 +7,7 @@
 A complete **full-stack e-commerce application** that combines **product management**, **role-based access control**, and a fully functional **shopping cart and checkout system**.
 
 🌐 **[Live Demo](https://catalogo-seven-kappa.vercel.app)**
+
 🎥[Demo Video — Watch Here](https://youtu.be/qt7saA_NRGI?si=JDcSX8xQ44-ubQlu)
 
 
@@ -242,6 +243,7 @@ npm run dev
 ---
 
 ### 💖 Built with Passion using React, Node.js & MongoDB
+
 
 
 
