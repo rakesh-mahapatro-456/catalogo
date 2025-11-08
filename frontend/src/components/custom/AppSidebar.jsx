@@ -36,7 +36,7 @@ export function AppSidebar() {
 
   const items = [
     { title: "Products", url: "/home", icon: Users },
-    { title: "Create Products", url: "/products/create", icon: PlusCircle },
+    //{ title: "Create Products", url: "/products/create", icon: PlusCircle },
   ];
 
   // Show loader if loading or user is not yet available
@@ -65,7 +65,6 @@ export function AppSidebar() {
 
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Product Management</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
