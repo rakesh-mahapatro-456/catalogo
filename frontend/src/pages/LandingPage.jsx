@@ -17,7 +17,7 @@ export default function LandingPage() {
   }, [isAuthenticated, navigate]);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-background">
       {/* Navbar */}
       <header className="w-full border-b bg-background">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -37,49 +37,52 @@ export default function LandingPage() {
       <main className="flex-1 flex flex-col items-center justify-center text-center px-6">
         <div className="max-w-3xl space-y-6">
           <h2 className="text-5xl font-bold tracking-tight">
-            Explore & Share <span className="text-primary">Amazing Products</span>
+            Shop Smart with <span className="text-primary">Catalogo</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Catalogo helps you discover products from around the world, list your own, and
-            manage everything in one place.
+            Discover, add, and manage products in one seamless experience — powered by MERN and ShadCN UI.
           </p>
           <div className="flex gap-4 justify-center">
-            <Button size="lg" onClick={() => navigate("/signup")}>
-              Get Started
+            <Button size="lg" onClick={() => navigate("/products")}>
+              Explore Products
             </Button>
           </div>
         </div>
 
+        {/* Features Section */}
         <div className="grid md:grid-cols-3 gap-6 mt-16 max-w-5xl w-full">
-          <Card>
-            <CardContent className="p-6 text-center">
-              <h3 className="text-xl font-semibold mb-2">🛍️ Browse Products</h3>
+          <Card className="shadow-sm hover:shadow-md transition">
+            <CardContent className="p-6 text-center space-y-2">
+              <h3 className="text-xl font-semibold">🛍️ Browse Products</h3>
               <p className="text-muted-foreground">
-                Explore a wide variety of products added by other users.
+                Explore a curated catalog of mock products with real-time listings and prices.
               </p>
             </CardContent>
           </Card>
-          <Card>
-            <CardContent className="p-6 text-center">
-              <h3 className="text-xl font-semibold mb-2">➕ List Your Products</h3>
+
+          <Card className="shadow-sm hover:shadow-md transition">
+            <CardContent className="p-6 text-center space-y-2">
+              <h3 className="text-xl font-semibold">🛒 Add to Cart</h3>
               <p className="text-muted-foreground">
-                Easily add your products and manage them from your dashboard.
+                Add your favorite products to the cart and track quantities effortlessly.
               </p>
             </CardContent>
           </Card>
-          <Card>
-            <CardContent className="p-6 text-center">
-              <h3 className="text-xl font-semibold mb-2">⚡ Quick Management</h3>
+
+          <Card className="shadow-sm hover:shadow-md transition">
+            <CardContent className="p-6 text-center space-y-2">
+              <h3 className="text-xl font-semibold">💳 Checkout</h3>
               <p className="text-muted-foreground">
-                Update product info, track availability, and handle everything smoothly.
+                Experience a clean, mock checkout process with total summaries and receipts.
               </p>
             </CardContent>
           </Card>
         </div>
       </main>
 
+      {/* Footer */}
       <footer className="border-t py-6 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} Catalogo. All rights reserved.
+        © {new Date().getFullYear()} Catalogo. Built with ❤️ using MERN + ShadCN UI.
       </footer>
     </div>
   );
