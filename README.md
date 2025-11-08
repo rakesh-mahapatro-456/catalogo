@@ -1,4 +1,4 @@
-# Catalogo: Product Catalog & Management System
+# Catalogo: E-commerce website
 
 > ⚠️ **Note:** The backend is hosted on a free-tier service. The first request after inactivity may take **30–60 seconds** to wake up the server. Subsequent requests will perform normally. 🚀
 
@@ -219,6 +219,7 @@ npm run dev
 ---
 
 Built with ❤️ using React, Node.js, and MongoDB
+
 
 
 
