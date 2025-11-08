@@ -1,47 +1,77 @@
-# Catalogo: E-commerce website
+# 🛍️ **Catalogo: E-Commerce Website**
 
-> ⚠️ **Note:** The backend is hosted on a free-tier service. The first request after inactivity may take **30–60 seconds** to wake up the server. Subsequent requests will perform normally. 🚀
+> ⚠️ **Note:** The backend is hosted on a free-tier service. The first request after inactivity may take **30–60 seconds** to wake up the server. Subsequent requests perform normally. 🚀
 
-![Catalogo Banner](https://img.shields.io/badge/Catalogo-Product%20Catalog-blue?style=for-the-badge\&logo=github)
+![Catalogo Badge](https://img.shields.io/badge/Catalogo-Full%20Stack%20E--Commerce-blue?style=for-the-badge\&logo=github)
 
-A full-stack product catalog application that streamlines the process of managing products with features like CRUD operations, role-based access control, and secure authentication.
+A complete **full-stack e-commerce application** that combines **product management**, **role-based access control**, and a fully functional **shopping cart and checkout system**.
 
 🌐 **[Live Demo](https://catalogo-seven-kappa.vercel.app)**
+🎥 **[Demo Video — Coming Soon](#)**
 
 ---
 
-## ✨ Features
+## ✨ **Features**
 
-### ✅ Authentication & Authorization
+### 🧑‍💼 **Authentication & Authorization**
 
-* Secure user signup and login
-* JWT-based authentication with **httpOnly cookies**
-* Password hashing using **bcrypt**
-* Role-based access control (RBAC) to manage user permissions
+* Secure **user signup & login** with JWT (httpOnly cookies)
+* Role-based access:
 
-### ✅ Product Management
-
-* **Create** new products with detailed information
-* **Read** and view products with pagination
-* **Update** product details efficiently
-* **Delete** products with confirmation prompts
-
-### ✅ Role-Based Access Control (RBAC)
-
-* **Admin**: Full access to all product management features
-* **User**: View products; cannot create, update, or delete
-* **Custom Roles**: Define additional roles as needed
-
-### ✅ Modern UI/UX
-
-* Responsive and accessible UI using **React + Vite**
-* **Redux Toolkit** for global state management
-* **Tailwind CSS** for consistent styling
-* Real-time UI updates after CRUD operations
+  * **Admin:** Full CRUD on products
+  * **User:** Browse, add to cart, checkout
+* Passwords hashed using **bcrypt**
 
 ---
 
-## 🛠️ Tech Stack
+### 🛒 **Cart & Checkout System**
+
+* Add products to cart directly from catalog
+* Update or remove items dynamically
+* Real-time total calculation via Redux
+* Mock checkout with name/email form
+* Generates order summary (bill/receipt)
+
+---
+
+### 🧾 **Product Management (Admin Only)**
+
+* **Create**, **Read**, **Update**, and **Delete** products
+* **RBAC:** Only Admins can access CRUD routes
+* Real-time UI updates after product operations
+
+---
+
+### 💎 **Modern UI/UX**
+
+* Responsive and accessible design using **Tailwind CSS**
+* Smooth navigation with **React Router**
+* Global state via **Redux Toolkit**
+* Minimal and intuitive checkout flow
+
+---
+
+## 🛠️ **Tech Stack**
+
+**Frontend**
+
+* ⚛️ React (Vite)
+* 🧭 React Router
+* 🎛️ Redux Toolkit
+* 💅 Tailwind CSS
+
+**Backend**
+
+* 🟢 Node.js + Express
+* 🍃 MongoDB + Mongoose
+* 🔐 JWT + bcrypt + Joi
+* 🌐 CORS + dotenv
+
+**Deployment**
+
+* 🖥️ Frontend → **Vercel**
+* ⚙️ Backend → **Render**
+* ☁️ Database → **MongoDB Atlas**
 
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge\&logo=react\&logoColor=black)
 ![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge\&logo=redux\&logoColor=white)
@@ -52,117 +82,109 @@ A full-stack product catalog application that streamlines the process of managin
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge\&logo=vercel\&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge\&logo=vite\&logoColor=white)
 
-### **Frontend**
+---
 
-* React (with Vite) for fast and optimized development
-* Redux Toolkit for predictable state management
-* React Router for navigation
-* Tailwind CSS for styling
+## 📸 **Screenshots**
 
-### **Backend**
+### 🏠 Home Page
 
-* Node.js with Express for REST APIs
-* MongoDB with Mongoose for data modeling
-* JWT for authentication (httpOnly cookies)
-* bcrypt for secure password hashing
-* Joi for request validation
-* CORS for cross-origin security
+![Home](https://res.cloudinary.com/dqz5xgr5v/image/upload/v1762608838/Screenshot_2025-11-08_at_19.00.06_uqnzr1.png)
 
-### **Deployment**
+### 📦 Product Description
 
-* Frontend: **Vercel**
-* Backend: **Render**
-* Database: **MongoDB Atlas**
+![Product](https://res.cloudinary.com/dqz5xgr5v/image/upload/v1762608838/Screenshot_2025-11-08_at_19.00.15_vhfyym.png)
+
+### 🛒 Cart Page
+
+![Cart](https://res.cloudinary.com/dqz5xgr5v/image/upload/v1762608838/Screenshot_2025-11-08_at_19.00.34_ifxm5l.png)
+
+### 💳 Checkout Modal
+
+![Checkout](https://res.cloudinary.com/dqz5xgr5v/image/upload/v1762608838/Screenshot_2025-11-08_at_19.01.08_eqppt2.png)
+
+### 🧾 Bill / Receipt
+
+![Bill](https://res.cloudinary.com/dqz5xgr5v/image/upload/v1762608838/Screenshot_2025-11-08_at_19.01.20_ghhvv5.png)
+
+🎥 **[Watch Demo Video (Coming Soon)](#)**
 
 ---
 
-## 📸 Screenshots
+## 🔑 **Roles & Access**
 
-### Landing Page
-
-![Landing Page](https://res.cloudinary.com/dqz5xgr5v/image/upload/v1759339749/Screenshot_2025-10-01_at_22.50.27_jqdjhb.png)
-
-### Home Page
-
-![Home Page](https://res.cloudinary.com/dqz5xgr5v/image/upload/v1759339751/Screenshot_2025-10-01_at_22.52.36_bujf9m.png)
-
-### Product Details Page
-
-![Product Details](https://res.cloudinary.com/dqz5xgr5v/image/upload/v1759339750/Screenshot_2025-10-01_at_22.52.45_pf366j.png)
-
-### Edit Product Page
-
-![Edit Product](https://res.cloudinary.com/dqz5xgr5v/image/upload/v1759339750/Screenshot_2025-10-01_at_22.52.54_ga4d9c.png)
-
-### Create Product Page
-
-![Create Product](https://res.cloudinary.com/dqz5xgr5v/image/upload/v1759339750/Screenshot_2025-10-01_at_22.53.09_edruqa.png)
-
-
----
-
-## 🔑 Role-Based Access Demo
-
-You can use the following accounts to test role-based access in the application:
-
-| Role  | Email                                     | Password | Access                                                                              |
-| ----- | ----------------------------------------- | -------- | ----------------------------------------------------------------------------------- |
-| Admin | [admin@gmail.com](mailto:admin@gmail.com) | 123456   | Full access: create, update, delete any product                                     |
-| User  | [neha@gmail.com](mailto:neha@gmail.com)   | 123456   | Limited access: can view all products; can update/delete only products they created |
-| User  | [test@gmail.com](mailto:test@gmail.com)   | 1234566  | Limited access: can view all products; can update/delete only products they created |
+| Role      | Email                                     | Password | Permissions                          |
+| --------- | ----------------------------------------- | -------- | ------------------------------------ |
+| **Admin** | [admin@gmail.com](mailto:admin@gmail.com) | 123456   | Full CRUD on products                |
+| **User**  | [neha@gmail.com](mailto:neha@gmail.com)   | 123456   | View products, add to cart, checkout |
+| **User**  | [test@gmail.com](mailto:test@gmail.com)   | 1234566  | Same as above                        |
 
 **Instructions:**
 
-1. Go to the [live demo](https://catalogo-seven-kappa.vercel.app).
-2. Log in with **Admin** credentials → full CRUD capabilities are enabled.
-3. Log in with **User** credentials (**[neha@gmail.com](mailto:neha@gmail.com)** or **[test@gmail.com](mailto:test@gmail.com)**) → CRUD operations are restricted; unauthorized actions return **403 Access Denied**.
-4. Try creating, editing, or deleting products with each account to see role-based permissions in action.
-
-> 🔹 This demonstrates how **role-based access control (RBAC)** works in the system without needing a video.
-
----
-## 🔗 API Endpoints
-
-### **Authentication**
-
-* `POST /api/v1/user/signup` → Register new user
-* `POST /api/v1/user/login` → Login user
-* `GET /api/v1/user/getUser` → Get logged-in user details
-
-### **Products**
-
-* `GET /api/v1/products` → Get products (with pagination)
-* `GET /api/v1/products/:id` → Get single product
-* `POST /api/v1/products` → Create new product
-* `PATCH /api/v1/products/:id` → Update product
-* `DELETE /api/v1/products/:id` → Delete product
+1. Log in as **Admin** → Access full CRUD options.
+2. Log in as **User** → Browse catalog, add to cart, and mock checkout.
+3. Unauthorized actions return `403 Access Denied`.
 
 ---
 
-## 🚀 Getting Started
+## 🔗 **API Endpoints**
+
+### 👥 Authentication
+
+| Method | Endpoint               | Description                |
+| ------ | ---------------------- | -------------------------- |
+| `POST` | `/api/v1/user/signup`  | Register a new user        |
+| `POST` | `/api/v1/user/login`   | Login and get JWT token    |
+| `GET`  | `/api/v1/user/getUser` | Get logged-in user details |
+
+---
+
+### 📦 Products
+
+| Method   | Endpoint               | Description                       |
+| -------- | ---------------------- | --------------------------------- |
+| `GET`    | `/api/v1/products`     | Fetch all products                |
+| `GET`    | `/api/v1/products/:id` | Get product by ID                 |
+| `POST`   | `/api/v1/products`     | Create new product *(Admin only)* |
+| `PATCH`  | `/api/v1/products/:id` | Update product *(Admin only)*     |
+| `DELETE` | `/api/v1/products/:id` | Delete product *(Admin only)*     |
+
+---
+
+### 🛒 Cart
+
+| Method   | Endpoint                | Description                |
+| -------- | ----------------------- | -------------------------- |
+| `GET`    | `/api/v1/cart`          | Get user’s cart            |
+| `POST`   | `/api/v1/cart`          | Add item to cart           |
+| `DELETE` | `/api/v1/cart/:id`      | Remove item from cart      |
+| `POST`   | `/api/v1/cart/checkout` | Mock checkout, return bill |
+
+---
+
+## 🚀 **Getting Started**
 
 ### **Prerequisites**
 
-* Node.js (v14+)
-* npm or yarn
-* MongoDB (local or cloud instance)
+* Node.js ≥ 16
+* MongoDB Atlas (or local MongoDB)
+* npm / yarn
 
 ### **Setup**
 
 ```bash
-# Clone repo
+# Clone repository
 git clone https://github.com/yourusername/Catalogo.git
 cd Catalogo
 ```
 
-#### **Backend**
+#### Backend
 
 ```bash
 cd backend
 npm install
 ```
 
-Create `.env` file:
+Create `.env`:
 
 ```env
 PORT=8000
@@ -177,14 +199,14 @@ Start server:
 npm run dev
 ```
 
-#### **Frontend**
+#### Frontend
 
 ```bash
 cd frontend
 npm install
 ```
 
-Create `.env` file:
+Create `.env`:
 
 ```env
 VITE_BACKEND_URL=http://localhost:8000/api/v1
@@ -198,28 +220,25 @@ npm run dev
 
 ---
 
-## 🔒 Security Highlights
+## 🔒 **Security Highlights**
 
-* JWT tokens stored in **httpOnly cookies** (prevents XSS attacks)
-* Passwords hashed with **bcrypt**
-* Validations with **Joi**
-* Protected API routes
-* CORS configured for secure cross-origin requests
-
----
-
-## ✅ Key Learnings
-
-* Core **CRM concepts**: product lifecycle, filtering, pagination
-* Secure authentication using **JWT & cookies**
-* State management using **Redux Toolkit**
-* Handling **CORS and deployment** on Vercel & Render
-* Implementing **server-side filtering and pagination**
+* **JWT tokens** stored in httpOnly cookies
+* **Password hashing** via bcrypt
+* **Input validation** with Joi
+* **Protected routes** for admin actions
+* **CORS configured** for secure frontend-backend communication
 
 ---
 
-Built with ❤️ using React, Node.js, and MongoDB
+## ✅ **Key Learnings**
 
+* Implementing **RBAC** in a real-world e-commerce system
+* Integrating **Redux Toolkit** with Express APIs
+* Managing secure authentication flows
+* Building **dynamic cart and checkout systems**
+* Handling deployment and CORS with Vercel + Render
 
+---
 
+### 💖 Built with Passion using React, Node.js & MongoDB
 
